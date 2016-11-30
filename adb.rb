@@ -17,9 +17,19 @@ class Adb
 
   def uninstall_app
 
+    if system "adb shell pm list packages | grep org.wikipedia.alpha"
+
     system "adb uninstall app-alpha-debug.apk"
 
+    else
+
+      puts "App not present"
+
+
     end
+
+    end
+
 
   def install_app
 
@@ -37,17 +47,3 @@ Adb.new.install_app
 
 #this object uninstalls the application
 #Adb.new.uninstall_app
-
-
-
-
-
-
-
-
-
-
-
-
-
-
