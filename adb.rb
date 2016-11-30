@@ -19,7 +19,7 @@ class Adb
 
     if system "adb shell pm list packages | grep org.wikipedia.alpha"
 
-    system "adb uninstall app-alpha-debug.apk"
+    system "adb uninstall org.wikipedia.alpha"
 
     else
 
