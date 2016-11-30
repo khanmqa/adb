@@ -36,7 +36,7 @@ Adb.new.device
 Adb.new.install_app
 
 #this object uninstalls the application
-Adb.new.uninstall_app
+#Adb.new.uninstall_app
 
 
 
